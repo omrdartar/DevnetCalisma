@@ -78,6 +78,7 @@ print(f'Tarih: {day}.{month}.{year} Saat: {hour}:{minute}:{second}')
 
 """
 
+"""
 
 mesaj='paramiko kutuphanesi netmiko kutuphanesi napalm kutuphanesi'
 #mesaj= ana string
@@ -89,19 +90,59 @@ mesaj9=' , '.join(mesaj)
 print(mesaj7)
 print(mesaj9)
 
+"""
 
+"""
 
+sayi=int(input('sayi yaz: '))
+if sayi >42:
+    print('sayi 42"den buyuk')
+elif sayi == 42:
+    print('Sayi 42 ye eşittir.')
+else:
+    print('sayi 42"den kucuk')
 
+"""
 
+"""
 
+sonuc = int(input('Sınav sonucunuzu giriniz: '))
 
+if sonuc > 100 or sonuc < 0:
+    print('Gecersiz veri girdiniz.')
+else:
+    if sonuc >= 85:
+        print('Pekiyi aldınız')
+    elif sonuc >= 70:
+        print('iyi')
+    elif sonuc >= 55:
+        print('Orta')
+    elif sonuc >= 45:
+        print('Gecer')
+    else:
+        print('Kaldin')
 
+"""
 
-
-
-
-
-
+sonuc = input('Sınav sonucunuzu giriniz: ')
+if not sonuc.isdigit() or int(sonuc) > 100 or int(sonuc) < 0:
+    print('Gecersiz veri')
+else:
+    sonuc=int(sonuc)
+    if sonuc >= 85:
+        print('Pek iyi')
+    
+    elif sonuc >= 70:
+        print('Iyi')
+    
+    elif sonuc >= 55:
+        print('Orta')
+    
+    elif sonuc >= 45:
+        print('Gecer')
+    
+    else:
+        print('Kaldin')
 
 
 
