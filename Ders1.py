@@ -124,7 +124,10 @@ else:
 
 """
 
-sonuc = input('Sınav sonucunuzu giriniz: ')
+"""
+
+sonuc = input('Sinav sonucunuzu giriniz: ')
+
 if not sonuc.isdigit() or int(sonuc) > 100 or int(sonuc) < 0:
     print('Gecersiz veri')
 else:
@@ -144,25 +147,96 @@ else:
     else:
         print('Kaldin')
 
+"""
+
+"""
+
+import time
+
+gerisayim = int(input('geri sayim: '))
+while gerisayim > 0:
+    print(gerisayim)
+    time.sleep(1)
+    gerisayim-=1
+print('Geri Sayim Bitti')
+
+"""
+
+"""
+
+import time
+gerisayim =int(input('gerisayim: '))
+while gerisayim > 0:
+    print(gerisayim,end=',')
+    time.sleep(1)
+    #gerisayim=gerisayim-1
+    gerisayim-=1
+print('gerisayim bitti')
+
+"""
+
+#sayi tahmin oyunu
+#python 1-100 arasinda bir sayi secer
+#ben de bunu tahmin edeyim
+#tahminim sayidan buyuk ise: tahmin>sayi. Daha dusuk degerde tahmin yap
+#tahminim sayidan kucuk ise: tahmin<sayi. Daha yuksek degerde tahmin yap
+#tahmin==sayi: bingo
+
+"""
+
+import random as rd
+
+sayi = rd.randint(1,100)
+deneme = 0
+while True:
+    tahmin = int(input('Lütfen 1 ile 100 arasinda bir tahmin giriniz : '))
+    deneme += 1
+    if  tahmin < sayi:
+        print('Daha yüksek bir değer giriniz: ')
+    
+    elif tahmin > sayi:
+        print('Daha kücük bir değer giriniz: ')
+    else:
+        print(f'Bingo. {deneme} deneme yaparak buldunuz.')
+        break
+    
+"""
+
+#sayi tahmin oyunu
+#python 1-100 arasinda bir sayi secer
+#ben de bunu tahmin edeyim
+#tahminim sayidan buyuk ise: tahmin>sayi. Daha dusuk degerde tahmin yap
+#tahminim sayidan kucuk ise: tahmin<sayi. Daha yuksek degerde tahmin yap
+#tahmin==sayi: bingo
+#tahmin hakki bastan belirlensin
+#her tahmin hakkinda geriye kac hakkin kaldigi soylesin
+#butun haklarini kullandin ve bilemedin: kaybettin. sayiyi acikla
+#eger kazanirsa: su kadar hak kullanarak kazandin
 
 
+import random as rd
+sayi=rd.randint(1,100)
+tahmin=0
+tahmin_hakki=int(input('kac adet tahmin hakkin olsun: '))
+hak=0
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+while tahmin !=sayi:
+    
+    tahmin=int(input('1-100 arasinda sayi yaz: '))
+    hak+=1
+    
+    if tahmin_hakki==hak and tahmin !=sayi:
+        print(f'Bilemedin. Sayi da {sayi}')
+        break
+    
+    elif tahmin > sayi:
+        print(f'kalan hak:{tahmin_hakki-hak} Daha dusuk degerde tahmin yap')
+    
+    elif tahmin < sayi:
+        print(f'kalan hak:{tahmin_hakki-hak} Daha yuksek degerde tahmin yap')
+    
+    else:
+        print(f'Bingo. {hak} adet tahmin hakki kullanarak kazandin.')
 
 
 
