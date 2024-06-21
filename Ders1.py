@@ -64,6 +64,8 @@ print(f'a kenari: {a} b kenari: {b} ve Hypo: {int(h)}')
 
 """
 
+"""
+
 from datetime import datetime
 now=datetime.now()
 day=now.day
@@ -74,10 +76,18 @@ minute=now.minute
 second=now.second
 print(f'Tarih: {day}.{month}.{year} Saat: {hour}:{minute}:{second}')
 
+"""
 
 
+mesaj='paramiko kutuphanesi netmiko kutuphanesi napalm kutuphanesi'
+#mesaj= ana string
+#kutuphanesi= substring
+mesaj7=mesaj.split(' ')
+mesaj9=' , '.join(mesaj)
 
 
+print(mesaj7)
+print(mesaj9)
 
 
 
