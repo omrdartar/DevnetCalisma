@@ -1,4 +1,7 @@
 
+
+# region Erdeniz Hoca Ders-1
+
 """
 
 import requests
@@ -264,7 +267,10 @@ while tahmin != sayi:
 #if x is 15 python karşılıgı if x == 15
 #if x is not 15 python karşılıgı if x != 15
 
-# region IF-THEN-ELSE-ELIF
+# endregion
+
+
+# region IF-THEN-ELSE-ELIF Aziz Hoca
 
 # region if-giriş Örnek-1
 # havaDurumu = input("Hava yağmurlu mu: ")
