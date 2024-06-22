@@ -201,6 +201,24 @@ while True:
         break
     
 """
+"""
+import random as rd
+
+sayi = rd.randint(1,100)
+deneme = 0
+
+while True:
+    tahmin = int(input('Lütfen 1 ile 100 arasında bir sayi giriniz: '))
+    deneme+=1
+    if tahmin < sayi:
+        print('Lütfen daha büyük bir sayi giriniz')
+    elif tahmin > sayi:
+        print('Lütfen daha küçük bir sayi giriniz')         
+    else:
+        print(f'Bingo. {deneme} deneme yaparak buldunuz')
+        break
+"""
+
 
 #sayi tahmin oyunu
 #python 1-100 arasinda bir sayi secer
@@ -213,19 +231,20 @@ while True:
 #butun haklarini kullandin ve bilemedin: kaybettin. sayiyi acikla
 #eger kazanirsa: su kadar hak kullanarak kazandin
 
+"""
 
 import random as rd
-sayi=rd.randint(1,100)
-tahmin=0
+sayi = rd.randint(1,100)
+tahmin = 0
 tahmin_hakki=int(input('kac adet tahmin hakkin olsun: '))
-hak=0
+hak = 0
 
-while tahmin !=sayi:
+while tahmin != sayi:
     
-    tahmin=int(input('1-100 arasinda sayi yaz: '))
-    hak+=1
+    tahmin = int(input('1-100 arasinda sayi yaz: '))
+    hak += 1
     
-    if tahmin_hakki==hak and tahmin !=sayi:
+    if tahmin_hakki == hak and tahmin != sayi:
         print(f'Bilemedin. Sayi da {sayi}')
         break
     
@@ -237,6 +256,204 @@ while tahmin !=sayi:
     
     else:
         print(f'Bingo. {hak} adet tahmin hakki kullanarak kazandin.')
+
+
+"""
+
+
+#if x is 15 python karşılıgı if x == 15
+#if x is not 15 python karşılıgı if x != 15
+
+# region IF-THEN-ELSE-ELIF
+
+# region if-giriş Örnek-1
+# havaDurumu = input("Hava yağmurlu mu: ")
+# if havaDurumu == "Yağmurlu":
+#     print("Şemsiye al")
+# else:
+#     print("Peki o zaman")
+# endregion
+
+# region if-giriş Örnek-2
+# a = int(input("Lütfen bir sayı giriniz: "))
+# if a < 0:
+#     print("{} sayısı negatiftir.".format(a))
+# else:
+#     print("{} Sayısı pozitiftir.".format(a))
+
+# endregion
+
+# region if-giriş Örnek-3
+# kullaniciAdi = input("Lütfen kullanıcı adınızı giriniz: ")
+# if kullaniciAdi == "admin":
+#     print("Hoşegeldin Senior")
+# elif kullaniciAdi == "user":
+#     print("Hoşgeldin User")
+# else:
+#     print("Kullanıcı adınız bulunamadı.")
+
+#endregion
+
+# region if-giriş Örnek-4
+
+# engeleDegdimi=input("Enegele Değdiniz mi : ")
+# can, skor = 3, 0
+# if engeleDegdimi == "Evet":
+#     can -= 1
+#     print("{} canınız kaldı".format(can))
+# else:
+#     skor += 1
+#     print("{} puan aldınız".format(skor))
+
+#endregion
+
+# region if-giriş Örnek-5
+# havaYagislimi = input("Hava Yagisli mi?: ")
+# havaSogukmu = input("Hava Soguk mu?: ")
+# kac_derece = int(input("Hava Kac Derece?: "))
+# if havaYagislimi == "yagisli":
+#     if havaSogukmu == "soguk":
+#         print("Şemsiyeni al, mont giy")
+#     else:
+#         print("Mont Giy")
+# elif havaSogukmu == "soguk":
+#     if kac_derece >= int(20):
+#         print("Hırka Al")
+#     elif kac_derece == int(15):
+#         print("Mont AL")
+#     else:
+#         print("Gocuk giy")
+# else:
+#     print("peki o zaman")
+# endregion
+
+# region if-giriş Örnek-6
+
+# sayi1 = int(input("Lütfen 1.sayıyı giriniz: "))
+# sayi2 = int(input("Lütfen 2.sayıyı giriniz: "))
+# sayi3 = int(input("Lütfen 3.sayıyı giriniz: "))
+#
+#
+# if sayi1 >= sayi2 and sayi1 >= sayi3:
+#     if sayi2 >= sayi3:
+#         print(sayi1, sayi2, sayi3)
+#     else:
+#         print(sayi1, sayi3, sayi2)
+# elif sayi2 >= sayi1 and sayi2 >= sayi3:
+#     if sayi1 >= sayi3:
+#         print(sayi2,sayi1,sayi3)
+#     else:
+#         print(sayi2,sayi3,sayi1)
+# else:
+#     if sayi1 >= sayi2:
+#         print(sayi3,sayi1,sayi2)
+#     else:
+#         print(sayi3,sayi2,sayi1)
+
+#endregion
+
+# region if-giriş örnek-7
+# sayi1 = int(input("Lütfen 1.sayıyı giriniz: "))
+# sayi2 = int(input("Lütfen 2.sayıyı giriniz: "))
+# if sayi1 > 0 and sayi2 > 0:
+#     print("Doğru")
+# else:
+#     print("Hatalı")
+# endregion
+
+""""
+Yıllık Gelir Vergisi  (ygv) hesaplayan programı yazınız.
+
+Not:
+
+Vergi dilimi: 0 – 22.000 TL için %15.
+
+Vergi dilimi: 22.000 TL – 49.000 TL için %20.
+
+Vergi dilimi: 49.000 TL – 180.000 TL için %27.
+
+Vergi dilimi: 180.000 TL – 600.000 TL için %35.
+
+Vergi dilimi: 600.000 TL üzeri için %40 hesaplanacak.
+
+"""
+
+# region if-giriş örnek-8
+
+# Yillik_Gelir = int(input("Lütfen yıllık kazancınızı giriniz: "))
+#
+# if 0 < Yillik_Gelir <= 22000:
+#     print("Yıllık ödeyeceginiz vergi", Yillik_Gelir*15/100 )
+# elif 22000 < Yillik_Gelir <= 49000:
+#     print("Yıllık ödeyeceginiz vergi", Yillik_Gelir*20/100)
+# elif 49000 < Yillik_Gelir <= 180000:
+#     print("Yıllık ödeyeceginiz vergi", Yillik_Gelir*27/100)
+# elif 180000 < Yillik_Gelir <= 600000:
+#     print("Yıllık ödeyeceginiz vergi", Yillik_Gelir * 35 / 100)
+# elif Yillik_Gelir > 600000:
+#     print("Yıllık ödeyeceginiz vergi", Yillik_Gelir * 40 / 100)
+# else:
+#     print("Hatalı giriş.")
+
+
+
+# endregion
+
+""""
+
+Girilen iki kenar uzunluğu için eşitlik durumuna göre ekrana alanı hesaplayıp çıktı veren programı yazalım
+
+
+
+Örn;
+
+Lütfen a kenarını giriniz:  4
+
+Lütfen b kenarını giriniz:  6
+
+Dikdörtgenin Alanı → 24 m2. dir
+
+
+
+Lütfen a kenarını giriniz:  4
+
+Lütfen b kenarını giriniz:  4
+
+Karenin Alanı → 16 m2. dir
+
+"""
+
+# region if-giriş örnek-9
+
+# kenarA = int(input("Lütfen a kenarını giriniz: "))
+# kenarB = int(input("Lütfen b kenarını giriniz: "))
+#
+# if kenarA == kenarB :
+#     print("Karenin alanı", kenarA * kenarB, "dir")
+# else:
+#     print("Dikdörgenin alanı", kenarA * kenarB, "dir")
+
+#endregion
+
+
+
+
+
+
+
+
+
+#endregion
+
+
+
+
+
+
+
+
+
+
 
 
 
