@@ -451,6 +451,234 @@ Karenin Alanı → 16 m2. dir
 
 #endregion
 
+# region DONGULER-LOOP-WHILE Aziz Hoca
+
+"""
+while True:
+    print("burdayım")
+    break
+
+for i in "":
+    print("burdayım")
+"""
+
+"""
+Döngüler için kurallar : 
+1-Başlangıç asla unutulmamalı.
+2-Bitiş asla unutulmamalı.
+3-Artış miktarı asla unutulmamalı.
+"""
+
+# region While Ornek-1
+
+# i = 0                       #Başlangıç
+# while i < 10:               #Bitiş
+#     print("Süper Hızlı")    #Aksiyon
+#     i += 1                  #Artış
+
+# endregion
+
+"""
+        - Ekrana aşağıdaki çıktıyı verecegiz
+            1.Öğrenci
+            2.Öğrenci
+            3.Öğrenci
+            ...
+"""
+
+# region While Ornek-2
+# ogrenciSayisi = 1
+#
+# while ogrenciSayisi < 4:
+#     print("{}.Öğrenci".format(ogrenciSayisi))
+#     ogrenciSayisi += 1
+# endregion
+
+"""
+
+Başlangıç değerini kullanıcıdan istediğiniz bir geri sayım programı yazınız. 
+
+"""
+
+# region While Ornek-3
+
+# i = int(input("Lütfen başlangıç değeri giriniz: "))
+
+# while i > 0:
+#     print(i, end=" ") # end=" " yan yana yazırmak için kullandık.
+#     i -= 1
+#
+#
+# i = int(input("Lütfen başlangıç değeri giriniz: "))
+# while i > 0:
+#     print(i) # Bu örnekte alt alta yazar.
+#     i -= 1
+
+#endregion
+
+"""
+
+Başlangıç değerini kullanıcıdan istediğiniz 2'şer 2'şer azalan bir program yaz. 
+
+"""
+
+# region While Ornek-4
+
+# i = input("Lütfen başlangıç mikarı giriniz: ")
+# if i.isdigit():
+#     i = int(i)
+#     while i > 0:
+#         print(i, end= " ")
+#         i -= 2
+# else:
+#     print("Hatalı giriş yaptınız.")
+
+# endregion
+
+"""
+
+1 den 100 e kadar olan tek sayıları yazdıran bir program yaz. 
+
+"""
+
+# region While Ornek-5
+
+# i = 1
+# while i <= 99:
+#     print(i, end=",")
+#     i += 2
+
+
+# i = 1
+# while i <= 100:
+#     if i % 2 == 1:
+#         print(i, end=",")
+#     i += 1
+
+# endregion
+
+"""
+
+            - Döngü içinde kullanıcıdan 3 adet sayı girmesi istenir.
+            - Ekrana Doğru formatta çıktı verilerek, sayıların toplamları yazılır.
+                Çıktı
+                Girilen ---- adet sayının toplamı ----- dır. 
+
+"""
+
+# region While Ornek-6
+
+# i = 1
+# toplam = 0
+# while i <= 3:
+#     s=int(input("Lütfen {}. sayıyı giriniz: ".format(i)))
+#     toplam += s
+#     i += 1
+# print("Girilen {} adet sayısının toplamı {}".format(i, toplam))
+
+# endregion
+
+# region While Ornek-7
+
+# i, toplam = 1, 0
+#
+# while i <= 3:
+#     s = input("Lütfen {}. sayıyı giriniz.".format(i))
+#     if s.isdigit():
+#         s = int(s)
+#         toplam += s
+#     else:
+#         print("Lütfen sayısal bir değer giriniz.")
+#         continue
+#     i += 1
+# print("Girilen {} adet sayının ortalaması {} dır.".format(i - 1, round(toplam/(i-1),3)))
+
+
+# endregion
+
+"""
+
+            - Döngü içinde kullanıcıdan x adet sayı girmesi istenir.
+            -0 girene kadar sayı istemeye devam edecek.
+            - Ekrana Doğru formatta çıktı verilerek, sayıların toplamları yazılır.
+                Çıktı
+                Girilen ---- adet sayının toplamı ----- dır. 
+
+"""
+
+# region While Ornek-8
+
+# toplam, i = 0, 0
+# while True:
+#     s = int(input("Lütfen sayı giriniz:\t"))
+#     if s == 0:
+#         break
+#     else:
+#         toplam += s
+#         i += 1
+# print("Girilen {} adet sayısının toplamı {}".format(i, toplam))
+
+# endregion
+
+# region While Ornek-9
+
+# deger = ""
+# i, j = 0, 0
+# while i < 5:
+#     i += 1
+#     while j < 5:
+#         j += 1
+#         deger += "* "
+#     print(deger)
+#     deger = ""
+#     j = 0
+
+# endregion
+
+# region While Ornek-10
+
+
+# deger = ""
+# i, j = 0, 0
+# while i < 10:
+#     i += 1
+#     while j < 15:
+#         j += 1
+#         deger += "* "
+#     print(deger)
+#     deger = ""
+#     j = 0
+
+# endregion
+
+# region While Ornek-11
+
+
+# deger = ""
+# i, j = 0, 0
+# while i < 10:
+#     i += 1
+#     while j < i:
+#         j += 1
+#         deger += "* "
+#     print(deger)
+#     deger = ""
+#     j = 0
+
+# endregion
+
+
+
+
+
+
+
+
+
+
+# endregion
+
+
 
 
 
