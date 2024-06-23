@@ -667,12 +667,18 @@ Başlangıç değerini kullanıcıdan istediğiniz 2'şer 2'şer azalan bir prog
 
 # endregion
 
+# region While Ornek-12
 
+i = 1
+a, b = 0, 1
+while i < 30:
+    i += 1
+    c = a + b
+    print(c, end=" , ")
+    a = b
+    b = c
 
-
-
-
-
+# endregion
 
 
 
