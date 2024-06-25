@@ -669,14 +669,14 @@ Başlangıç değerini kullanıcıdan istediğiniz 2'şer 2'şer azalan bir prog
 
 # region While Ornek-12
 
-i = 1
-a, b = 0, 1
-while i < 30:
-    i += 1
-    c = a + b
-    print(c, end=" , ")
-    a = b
-    b = c
+# i = 1
+# a, b = 0, 1
+# while i < 30:
+#     i += 1
+#     c = a + b
+#     print(c, end=" , ")
+#     a = b
+#     b = c
 
 # endregion
 
@@ -684,15 +684,215 @@ while i < 30:
 
 # endregion
 
+# region Fonksiyonlar Aziz Hoca
+
+
+# region Fonksiyonlar Örnek-1 Parametre Almayan, Değer Döndürmeyen
+
+# def Welcome():
+#     ad = input("Adnız:\t")
+#     print("Hoşgeldiniz", ad)
+#
+# Welcome()
+# endregion
+
+# region Fonksiyonlar Örnek-2 Parametre Almayan, Değer Döndüren
+
+# def Topla():
+#     s1 = int(input("S1:\t"))
+#     s2 = int(input("S2:\t"))
+#     sonuc = s1 + s2
+#     return sonuc
+#
+# sonuc = Topla()
+# print(sonuc)
+
+
+# endregion
+
+# region Fonksiyonlar Örnek-3 Parametre Alan, Değer Döndürmeyen-1
+
+# import math
+# def Alan(yaricap):
+#     sonuc = math.pi * yaricap ** 2
+#     print("Alan :", sonuc)
+#
+# s = int(input("Lütfen parametre giriniz: "))
+# Alan(s)
+
+# endregion-1-1
+
+# region Fonksiyonlar Örnek-4 Parametre Alan, Değer Döndürmeyen-2
+
+# def Karsilama(ad, soyad):
+#     print("Merhaba", ad, soyad)
+#
+# ad = input("Lütfen Adınızı Giriniz.")
+# soyad = input("Lütfen SoyAdınızı Giriniz.")
+# Karsilama(ad, soyad)
+
+# endregion
+
+# region Fonksiyonlar Örnek-5 Parametre Alan, Değer Döndürmeyen-3
+
+# def MutlakDeger(a):
+#     if a < 0:
+#         a *= -1
+#     print("Mutlak Değer: {}".format(a))
+#
+# MutlakDeger(-10)
+
+# endregion
+
+# region Fonksiyonlar Örnek-6 Parametre Alan, Değer Döndüren
+
+# def MutlakDeger(a):
+#     if a < 0:
+#         a *= -1
+#     return "ABS: {}".format(a)
+#
+# print(MutlakDeger(-10))
+
+# endregion
+
+# region Fonksiyonlar Örnek-7
+
+# def Hizlan():
+#     global hiz
+#     hiz += 5
+#     print("Anlık Hızınız {} km/s".format(hiz))
+#
+# def Yavasla():
+#     global hiz
+#     hiz -= 5
+#     print("Anlık Hızınız {} km/s".format(hiz))
+#
+# hiz = 80
+#
+# Hizlan()
+# Hizlan()
+# Hizlan()
+# Hizlan()
+# Yavasla()
+# Hizlan()
+
+# endregion
+
+"""
+
+    - Sonuc isimli fonsiyon olacak.
+        Sonuc() içinde s1, s2 değişkenlerine kullanıcıdan değer alınacak.
+    - Koşula göre değer dönecek
+        Eğer s1 s2 den büyük ise çarpım değeri geriye dönecek
+        Eğer s1 s2 den küçük ise bölme değeri geriye dönecek
+        Eğer s1 s2 den eşit ise eşitlik değeri geriye dönecek
+
+"""
+
+# region Fonksiyonlar Örnek-8
+
+# def Sonuc(s1, s2):
+#     if s1 > s2 :
+#         print(s1*s2)
+#     elif s1 < s2:
+#         print(s2/s1)
+#     else:
+#         print(s1,",", s2)
+#
+#
+#
+# a = int(input("Lütfen birinci sayıyı giriniz: "))
+# b = int(input("Lütfen ikinci sayıyı giriniz: "))
+#
+# Sonuc(a,b)
+
+
+# endregion
+
+# region Fonksiyonlar Örnek-9
+
+# def Sonuc():
+#     s1 = int(input("S1: \t"))
+#     s2 = int(input("S2: \t"))
+#     if s1 > s2 :
+#         return (s1*s2)
+#     elif s1 < s2:
+#         return (s2/s1)
+#     else:
+#         return (s1 , s2)
+#
+# x = Sonuc()
+# print(x)
+#
+
+# endregion
+
+# region Fonksiyonlar Örnek-10
+
+# def Islem(operator, a, b):
+#     if operator == "+":
+#         return a + b
+#     elif operator == "-":
+#         return a -b
+#     else:
+#         return a * b
+#
+# sonuc = Islem(2, 10, "*")
+# print(sonuc)
+
+
+# endregion
+
+# region Fonksiyonlar Örnek-11
+
+# def Islem(operator, a, b):
+#     if operator == "+":
+#         return a + b
+#     elif operator == "-":
+#         return a -b
+#     else:
+#         return a * b
+#
+# sonuc = Islem(a=2, b= 10, operator="*")
+# print(sonuc)
+
+
+# endregion
+
+# region Fonksiyonlar Örnek-12
+
+"""
+Bu Örnekte ortalama fonksiyon örnepği var fakat burada 4. değeri girersek fonsiyon bozuluyor.
+Bir Sonraki örnekte bunu nasıl aşacagımıza bakacağız.
+"""
+
+
+# def Ortalama(a, b, c):
+#     return (a + b +c) / 3
+#
+# print(Ortalama(3,6,9))
+
+# endregion
+
+# region Fonksiyonlar Örnek-12
+
+# def Ortalama(*liste):
+#     return sum(liste) / len(liste)
+#
+# print(Ortalama(10,20,30,40,50))
+
+# endregion
 
 
 
 
+# endregion
 
 
 
+import random as rd
 
-
+sonuc = rd.random(1, 2)
 
 
 
