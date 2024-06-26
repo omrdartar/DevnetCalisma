@@ -890,9 +890,6 @@ Bir Sonraki örnekte bunu nasıl aşacagımıza bakacağız.
 
 
 
-import random as rd
-
-sonuc = rd.random(1, 2)
 
 
 
